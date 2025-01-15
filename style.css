@@ -179,12 +179,16 @@
         border-radius: 10px;
         height: 35px;
         border: 1px solid #ECECEC;
+        cursor: pointer;
         svg{
             margin-right: 7px;
             
         }
         margin-top: 15px;
 
+    }
+    button:hover{
+        background-color: rgb(211, 209, 209);
     }
     label{
         font-weight: 550;
@@ -318,6 +322,7 @@ button{
         background-color: #E34C42;
         color: white;
         font-size: 15px;
+        cursor: pointer;
     }
     li{
         height: 58px;
@@ -328,6 +333,7 @@ button{
         width: 18%;
         list-style: none;
         background-color: #F3F3F3;
+        cursor: pointer;
     }
 }
 
@@ -362,14 +368,16 @@ button{
     }
     .left-section{
         width: 100%;
+        height: auto;
         display: flex;
         align-items: center;
         justify-content: center;
-        /* flex-direction: column; */
+        flex-direction: column;
         flex-wrap: wrap;
     }
     .box{
-        width: 40%;
+        width: 60%;
+        height: 20%;
     }
     .right-section{
         width: 100%;
@@ -382,6 +390,10 @@ button{
         text-align: center;
         h1{
             font-size: 40px;
+        }
+        p{
+            font-size: 25px;
+            line-height: 30px;
         }
         br{
             display: none;
@@ -401,26 +413,57 @@ button{
             align-items: center;
             justify-content: center;
         }
+        margin-block: 30px;
+        button{
+            width: 40%;
+            height: 50px;
+            font-size: 20px;
+        }
         
     }
     .location{
+        margin-block: 30px;
         width: 100%;
         height: 150px;
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
+        /* background-color: black; */
+        button{
+            font-size: 20px;
+            width: 90%;
+            height: 50px;
+            margin-right: 10px;
+        }
+        a{
+            font-size: 20px;
+        }
         p{
             font-size: 25px;
         }
     }
     .lender{
+        margin-block: 50px;
         width: 100%;
-        height: 150px;
+        height: 250px;
         display: flex;
         align-items: center;
         justify-content: space-around;
         p{
-            font-size: 25px;
+            font-size: 30px;
+        }
+        .len-btn{
+            width: 100%;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: column;
+            button{
+                font-size: 20px;
+                width: 50%;
+                height: 50px;
+            }
         }
     }
     .details{
@@ -443,8 +486,8 @@ button{
     .chat{
         position: fixed;
         bottom: 10px;
-        left: 700px;
-        width: 8%;
+        left: 660px;
+        width: 10%;
         height: auto;
         display: flex;
         align-items: center;
